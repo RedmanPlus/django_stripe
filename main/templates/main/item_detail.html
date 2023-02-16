@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %} 
+  <div>
+    <h1>{{item.name}}</h1>
+    <p>{{item.description}}</p>
+    <p><b>{{item.price}}</b></p>
+  </div>
+  <button id="buyBtn">Купить</button>
+  <script src="{% static 'buy.js' %}"></script>
+{% endblock %}
